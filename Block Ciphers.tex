@@ -24,32 +24,33 @@
         \item If n = 128 bits; $k = log_2(2^{128}!) = 2^{134} bits.$
         \end{itemize}
     \end{itemize}
+\item Real-World Block Ciphers
 \begin{itemize}
-\item Data Encryption Standard (DES)
-    \begin{itemize}
-    \item NIST Standard
+    \item Data Encryption Standard (DES)
         \begin{itemize}
-        \item 56-bit keys (due to 8th bit of every byte being a parity bit)
-        \item 64-bit block size
+        \item NIST Standard
+            \begin{itemize}
+            \item 56-bit keys (due to 8th bit of every byte being a parity bit)
+            \item 64-bit block size
+            \end{itemize}
+        \item Invented by IBM
+        \item Attack: Linear Cryptanalysis - Relationships between plaintext & ciphertext (supposedly NSA improved DES to be resistent to this attack)
+        \item Replaced by AES
         \end{itemize}
-    \item Invented by IBM
-    \item Attack: Linear Cryptanalysis - Relationships between plaintext & ciphertext (supposedly NSA improved DES to be resistent to this attack)
-    \item Replaced by AES
-    \end{itemize}
-\item Advanced Encryption Standard (AES)
-    \begin{itemize}
-    \item Rijndael
+    \item Advanced Encryption Standard (AES)
         \begin{itemize}
-        \item 128-bit blocksize
-        \item 128/192/256-bit keysizes
+        \item Rijndael
+            \begin{itemize}
+            \item 128-bit blocksize
+            \item 128/192/256-bit keysizes
+            \end{itemize}
+        \item Fast + low gate count
         \end{itemize}
-    \item Fast + low gate count
+    \item RC5: Ron's Code 5
+        \begin{itemize}
+        \item Simple, fast
+        \item 32/64/128-bit block size
+        \item 0-2040-bit key size
+        \end{itemize}
     \end{itemize}
-\item RC5: Ron's Code 5
-    \begin{itemize}
-    \item Simple, fast
-    \item 32/64/128-bit block size
-    \item 0-2040-bit key size
-    \end{itemize}
-\end{itemize}
 \end{itemize}
