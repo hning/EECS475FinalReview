@@ -89,6 +89,10 @@
         \begin{itemize}
         \item Encrypt plaintext with each possible $k_1$ ($2^k$ keys).
         \item Decrypt c under all possible $k_2$
+            \begin{itemize}
+            \item If we find $c'$ from decryption, we have found $k_1$ form the table.
+            \item Use Birthday Paradox: Only need $O(2^{k/2})$ rows.
+            \end{itemize}
         \end{itemize}
     \end{itemize}
 \end{itemize}
