@@ -95,4 +95,24 @@
             \end{itemize}
         \end{itemize}
     \end{itemize}
+\item Block Cipher Modes
+    \begin{itemize}
+    \item Types
+        \begin{itemize}
+        \item Electronic Code Book (ECB)
+        \item Cipher Block Chaining (CBC)
+        \item Output Feedback (OFB)
+        \item Counter Mode (CTR)
+        \end{itemize}
+    \item Electronic Code Book (ECB)
+        \begin{itemize}
+        \item Use the same key to encode every block of the message
+        \end{itemize}
+    \item Cipher Block Chaining (CBC)
+        \begin{itemize}
+        \item Start with an initialization vector
+        \item $c_0 =$ initialization vector (public random string to prevent patterns)
+        \item $c_i = E_k(c_{i-1} \xor p_i)$
+        \end{itemize}
+    \end{itemize}
 \end{itemize}
