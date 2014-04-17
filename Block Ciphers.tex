@@ -112,7 +112,7 @@
         \begin{itemize}
         \item Start with an initialization vector
         \item $c_0 =$ initialization vector (public random string to prevent patterns)
-        \item $c_i = E_k(c_{i-1} \xor p_i)$
+        \item $c_i = E_k(c_{i-1} \oplus p_i)$
         \end{itemize}
     \end{itemize}
 \end{itemize}
