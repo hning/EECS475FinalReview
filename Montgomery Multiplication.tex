@@ -1,7 +1,7 @@
 \section{Montgomery Multiplication}
 \begin{itemize}
 \item Goal: Reduce time cost for large Modular operations
-\item Speed relies on caching and a large number of montgomery operations.
+\item Speed relies on caching, large number of montgomery operations, and taking modulus with powers of two. 
 \item M-Residue
     \begin{itemize}
     \item Let $M$ be a prime n-bit integer $2^{N-1} < M < 2^N$
@@ -21,6 +21,11 @@
         \begin{itemize}
         \item (i.e $RR^{-1} - M'M = 1$)
         \end{itemize}
-    \item m = T*M
+    \item $m = T*M' mod R$
+    \item $t = \frac{T+mM}{R}$
+        \begin{itemize}
+        \item NOTE: this is integer division
+        \end{itemize}
+    \item $t \ge M$ return $t-M$, else return $t$.
     \end{itemize}
 \end{itemize}
