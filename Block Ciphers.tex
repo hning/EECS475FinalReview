@@ -60,4 +60,22 @@
     \item Storage Complexity: How much hard drive space does the adversay need?
     \item Computational Complexity: How much time does it take the adversary to process the key?
     \end{itemize}
+\item Breaking Block Ciphers
+    \begin{itemize}
+    \item Brute Force Guess
+        \begin{itemize}
+        \item What if k is small?
+        \item $O(2^k)$ where k is the bits of the key
+        \item Known-plaintext attack: Get plaintext/CT pair
+        \end{itemize}
+    \item Small block size attack
+        \begin{itemize}
+        \item WHat if n is small?
+        \item Known PT attack: Create a table of PT $\rightarrow$ CT w/o key
+        \item Birthday Paradox: Proportional to the square root of the size of the search space
+            \begin{itemize}
+            \item $\sqrt(2^n) = 2^(n/2) known plaintexts/ciphertext pairs$
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
 \end{itemize}
