@@ -22,4 +22,23 @@
         \item Given a message, should be hard to find another input with the same hash.
         \end{itemize}
     \end{itemize}
+\item Attacks
+    \begin{itemize}
+    \item Identical Prefix Collision Attack
+        \begin{itemize}
+        \item Algorithm given prefix P
+        \item Produce suffix T and pair of messages (M,M') s.t. H(P||M||T) = H(P||M'||T)
+        \end{itemize}
+    \item Chosen Prefix Collision Attack
+        \begin{itemize}
+        \item Given 2 chosen prefixes P, P'
+        \item Produces a pair of messages (M,M') s.t. H(P||M) = H(P'||M')
+        \end{itemize}
+    \end{itemize}
+\item Applications
+    \begin{itemize}
+    \item PGP Fingerprints: Collision Resisitance, 2PIR
+    \item Signed Software: Collision Resistance, PIR, 2PIR
+    \item /etc/passwd: PIR
+    \end{itemize}
 \end{itemize}
