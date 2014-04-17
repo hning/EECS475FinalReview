@@ -1,6 +1,7 @@
 \section{Montgomery Multiplication}
 \begin{itemize}
 \item Goal: Reduce time cost for large Modular operations
+\item Speed relies on caching and a large number of montgomery operations.
 \item M-Residue
     \begin{itemize}
     \item Let $M$ be a prime n-bit integer $2^{N-1} < M < 2^N$
@@ -12,5 +13,14 @@
     \item $\bar{z} = \bar{x} + \bar{y}$ mod $M$
         \\$\bar{z} = (x+y)*R$ mod $M$
     \item $\bar{z} = \bar{x}*\bar{y}*R^{-1}$ mod $M$
+    \end{itemize}
+\item Montgomery Reduction: RED($T$)
+    \begin{itemize}
+    \item Define RED($T$) $= TR^{-1}$ mod $M$
+    \item Let $M' = -M^{-1}$ mod $R$
+        \begin{itemize}
+        \item (i.e $RR^{-1} - M'M = 1$)
+        \end{itemize}
+    \item m = T*M
     \end{itemize}
 \end{itemize}
