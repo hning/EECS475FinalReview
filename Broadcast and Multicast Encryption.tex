@@ -59,6 +59,15 @@
         \item The leaf nodes are keys given out to users
         \end{itemize}
     \item Initialization
-        
+        \begin{itemize}
+        \item Give user every key to path of root: $O(log n)$ keys.     
+        \end{itemize}
+    \item Revocation
+        \begin{itemize}
+        \item Re-key nodes on path to revoked user, distribute encrypted keys
+        \item Ex. Revoke key from user 6
+        \item k1', k3', k6' reiussed
+        \item Key given to $U_7$: $E_{k3'}(k1'), E_{k7}(k3')$
+        \end{itemize}
     \end{itemize}
 \end{itemize}
