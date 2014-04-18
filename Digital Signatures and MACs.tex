@@ -10,5 +10,12 @@
         \item $\sigma = \text{sign}_{priv}(m)$
         \item bool $\text{verify}_{pub}(m, \sigma)$
         \end{itemize}
+    \item Breaking a signature scheme; adversarial model
+        \begin{itemize}
+        \item Key-only attack: access to public key
+        \item Known message attack: access to messages and their signatures (no choice)
+        \item Chosen message attack: Choose specific message signature pairs. Strictly more powerful than those above. Oracle. All requests in one shot.
+        \item Adaptive chosen message attack: Change messages to sign after each response from the oracle.
+        \end{itemize}
     \end{itemize}
 \end{itemize}
