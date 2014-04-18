@@ -2,4 +2,13 @@
 \\Goal: Send a message with an authentication code to prevent tampering
 \begin{itemize}
 \item Signature Function
+    \begin{itemize}
+    \item $\sigma = s =$ sign(m)
+    \item Public Key Encryption
+    \\ Private key: signing key, Public key: verification key
+        \begin{itemize}
+        \item $\sigma = sign_{priv}(m)$
+        \item bool $verify_{pub}(m, \sigma)$
+        \end{itemize}
+    \end{itemize}
 \end{itemize}
