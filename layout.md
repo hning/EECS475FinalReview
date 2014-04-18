@@ -5,5 +5,6 @@ Hash Functions.tex
 Elliptic Curve Cryptography.tex
 Secret Sharing.tex
 Broadcast and Multicast Encryption.tex
+Side Channels and Faults1.tex
 figures/Logical Key Hierarchy - New Page/Logical Key Hierarchy - New Page.png
 ////
