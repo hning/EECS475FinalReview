@@ -10,6 +10,12 @@
 \item Faults
     \begin{itemize}
     \item CRT Fault
+        \begin{itemize}
+        \item Decryption of ciphertext c with known-plaintext p
+        \item Cause a fault in the CRT calculation so that one of the primes is wrong
+        \item Faulty decrypted message p'. 
+        \item gcd(p-p' mod N, N) is one of the prime numbers
+        \end{itemize}
     \item Sensor Readings
         \begin{itemize}
         \item Microphone interference
