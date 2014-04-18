@@ -1,2 +1,49 @@
 \section{Broadcast and Multicast Encryption}
 \\Goal: Reduce the overhead for the publisher
+\begin{itemize}
+\item Naive Broadcast
+    \begin{itemize}
+    \item $Broadcast = E_k("Message"), E_{k1}(K), E_{k2}(K) ... E_{kn}(K)$
+    \item Publisher: Assign the $E_{ki}$ to the $i$th user and broadcast the entire message.
+    \item Broadcast Size: $O(n)$, where $n$ is the number of users
+    \item Broadcast is easy, joining is easy; just tack on another key
+    \end{itemize}
+\item Naor-Pinkas
+    \begin{itemize}
+    \item n users/subscribers
+    \item Initialization
+        \begin{itemize}
+        \item Broadcaster picks group key $K$ from a finite set
+        \item Broadcaster generates a $(t,n)$ threshold scheme (Shamir secret sharing)
+        \item $k' = f(0) mod q$
+        \item Every user $u_i \leftarrow (i,f(i))$ given a share. $q > $ number of subscribers.
+        \end{itemize}
+    \item Revocation
+        \begin{itemize}
+        \item Set F = set of users to revoke
+        \\|F| = t-1
+        \item Reveal all shares of that group F. 
+        \end{itemize}
+    \item Size of message: Linear in # of non-continuing sucscribers (revoked users)
+    \end{itemize}
+\item Re-usable Naor Pinkas
+    \begin{itemize}
+    \item Initialization
+        \begin{itemize}
+        \item Pick prime P s.t. $P = 2q + 1$ (sophie germaine prime)
+        \item Find a generator $g$ of a subgroup of $Z_p^*$ of size q (half of primes fill this requirement)
+        \item $k' = g^{rf(0)} mod p$ where $r \in_R Z_p^*$
+        \item Share distribution: (t,n)
+            \\ $u_i \leftarrow (i, f(i))$
+        \end{itemize}
+    \item Revocation
+        \begin{itemize}
+        \item Old Idea: Publish t-1 shares, New Idea: Blinded shares
+        \item Distribute "blinded" shares. 
+        \item Set of F revoked users
+        \item Distribute $i,s_i = g^{rf(i)}$ mod $p$
+        \item $R = g^r$ mod $p$
+        \item g
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
