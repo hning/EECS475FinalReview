@@ -37,5 +37,13 @@
             \item (message, signed message) = $(\sigma^e, \sigma)$
             \end{itemize}
         \end{itemize}
+    \item Existential Forgery Fix
+        \begin{itemize}
+        \item $\sigma = h(m)^d \text{ mod } n$
+            \begin{itemize}
+            \item Where h is collision, PIR, 2nd PIR resistant. 
+            \end{itemize}
+        \item Verify: $\sigma^e = h(m) \text{ mod } n$
+        \end{itemize}
     \end{itemize}
 \end{itemize}
