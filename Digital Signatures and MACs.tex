@@ -28,6 +28,13 @@
         \begin{itemize}
         \item Signer: (Private) $p, q, d = e^-1 \text{mod} \phi$
         \item Verifier: $e,n$
+        \item $\sigma = m^d \text{mod} n$
+        \\verify = $\sigma^e =? m$
+        \item Forgery
+            \begin{itemize}
+            \item $\sigma = \text{Random String}$; $\sigma \in_R Z_N^*$
+            \item $m = \sigma^e \text{mod} n$
+            \end{itemize}
         \end{itemize}
     \end{itemize}
 \end{itemize}
