@@ -8,4 +8,4 @@ Broadcast and Multicast Encryption.tex
 figures/Logical Key Hierarchy - New Page/Logical Key Hierarchy - New Page.png
 Side Channels and Faults1.tex
 Digital Signatures and MACs.tex
-Bound Checking and Buffer Overflows.tex
+Bounds Checking and Buffer Overflows.tex
