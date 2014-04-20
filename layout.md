@@ -9,3 +9,4 @@ figures/Logical Key Hierarchy - New Page/Logical Key Hierarchy - New Page.png
 Side Channels and Faults1.tex
 Digital Signatures and MACs.tex
 Bounds Checking and Buffer Overflows.tex
+Definition of Security.tex
