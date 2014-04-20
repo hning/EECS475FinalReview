@@ -79,6 +79,8 @@
     \item Real World Example: WSJ password file  
         \begin{itemize}
         \item $\text{MAC}_k(\text{username}) = \text{crypt}(\text{user }||k)$
+        \item Unfortunately, crypt truncated the user input after 8 characters
+        \item Thus, inputting a 7 char username made it trivially easy to generate the first character of the secret key.
         \end{itemize}
     \end{itemize}
 \end{itemize}
