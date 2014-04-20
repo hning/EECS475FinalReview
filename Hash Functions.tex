@@ -7,20 +7,13 @@
     \end{itemize}
 \item Properties
     \begin{itemize}
-    \item Pre-Image Resistance (PIR): one-wayness
+    \item Pre-Image Resistance (PIR): one-wayness; Difficulty of inversion
         \begin{itemize}
-        \item Difficulty of inversion
         \item A function $h$ is PIR if no efficient adversary program $A$ can invert $h$ on more htan a negligible # of outputs.
         \item $h(x) = x^b$ mod $n$; $n=pq, b>1$. factorization unknown.
         \end{itemize}
-    \item Collision Resisitance
-        \begin{itemize}
-        \item Hard to find \textbf{any} pair of inputs that share outputs.
-        \end{itemize}
-    \item Second Pre-Image Resistance
-        \begin{itemize}
-        \item Given a message, should be hard to find another input with the same hash.
-        \end{itemize}
+    \item Collision Resistance: Hard to find \textbf{any} pair of inputs that share outputs.
+    \item Second Pre-Image Resistance: Given a message, should be hard to find another input with the same hash.
     \end{itemize}
 \item Attacks
     \begin{itemize}
