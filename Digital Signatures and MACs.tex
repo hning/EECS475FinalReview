@@ -46,4 +46,22 @@
         \item Verify: $\sigma^e = h(m) \text{ mod } n$
         \end{itemize}
     \end{itemize}
+\item Message Authentication Codes (MAC)  
+\begin{itemize}  
+\item Parameters  
+    \begin{itemize}  
+    \item One key k  
+    \item $\sigma = \text{sign}_k(m)$ 
+    \item $\text{bool verify}_k(m,\sigma)$ 
+    \end{itemize}  
+    \item $\text{MAC}_k(m) = h(k||m)$ is BAD  
+    \begin{itemize}  
+    \item Forgeable  
+    \item Hash Functions 
+    \begin{itemize} 
+    \item Pre-Process: $y = \text{pre-process}(m)$; add padding        \item Compression: $y = \text{compress}(y, f(m))$; continue to consume $f(m)$  
+    \item Post-Process: output $g(y)$  
+    \end{itemize}  
+    \end{itemize}  
+    \item Real World Example: WSJ password file  \end{itemize}
 \end{itemize}
